@@ -6,12 +6,13 @@ Critérios do desafio
 - Exibir `Code.education Rocks!`;
 - Imagem criada com menos de 2MB.
 
-
-Imagem no Docker Hub
-
-` www.`
-
 ## Comandos
+
+Push da [imagem no Docker Hub](`https://hub.docker.com/repository/docker/liviaribeiro14/codeeducation`)
+
+```bash
+docker push liviaribeiro14/codeeducation:latest
+```
 
 Build
 ```bash
@@ -21,4 +22,9 @@ docker build -t liviaribeiro14/codeeducation .
 Run 
 ```bash
 docker run --rm liviaribeiro14/codeeducation   
+```
+
+Ver tamanho da imagem
+```bash
+docker images | grep codeeducation  
 ```
